@@ -1,0 +1,192 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.outerWrap{
+/*            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#pageHead{
+  height: 60px;
+  background: #051937;
+  box-shadow: 1px 1px 5px 2px #008799;
+  transform: translate3d(0px,0px,60px);
+  display: flex;
+  flex-wrap: wrap;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  position: relative;
+  filter: drop-shadow(0px 0px 10px gray);
+}
+
+.navbar{
+  position: relative;
+   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar i{
+  display: inline-block;
+  font-size: 2em;
+  color: #fff;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-left:20px;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.navbar .rotate{
+  display: inline-block;
+  padding-left: 20px;
+  transform: rotate(90deg);
+ margin-left:20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.navbar .active{
+  color: red;
+  display: inline-block;
+}
+
+.main{
+   animation: 1s linear 0s 1 slideInFromLeft;
+  /*animation-fill-mode: both;  */
+  width: 100%;
+}
+
+#navContainer > *{
+  margin: 5px 0px;
+}
+
+#navContainer input{
+  height: 35px;
+  border-radius: 2px;
+  box-shadow: unset!important;
+  outline: none!important;
+  display: block;
+  text-align: justify;
+  width: 99%;
+  margin: 0 auto;
+  padding: 0px 20px 0px 10px;
+  border: 1px solid green;
+}
+
+#navContainer input[type=button]{
+  text-align: center!important;
+  cursor: pointer;
+      background-color: #337ab7;
+border-color: #2e6da4;
+  color:#fff;
+  filter: contrast(150%);
+  position: relative;
+  bottom:0px;
+  left:0px;
+  font-size: 1em;
+  font-family: inherit;
+  
+}
+
+#navContainer input[type=text]:focus{
+  box-shadow: 0px 0px 1px 2px white, 0px 0px 2px 3px green!important;
+}  #navContainer input[type=button]:focus{
+  box-shadow: 2px 2px 0px #337ab7, 4px 4px 0px green!important;
+  top: -4px;
+  left: -4px;
+  border-radius: none;
+}
+
+#navContainer input[type=button]:hover{
+  box-shadow: 0px 0px 1px 2px lightness;
+}
+
+.seperator{
+  width: 100%;
+  height: 0.5px;
+  background: #051937;
+}
+
+
+
+@keyframes slideInFromLeft {
+0% {
+transform: translateX(-100%);
+}
+100% {
+transform: translateX(0);
+}
+}    
+
+  @keyframes slideInFromTop {
+0% {
+transform: translateY(-100%);
+}
+100% {
+transform: translateY(0);
+}
+}
+
+#mainBody{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}  
+
+#optionsContainer{
+  width: 25%;
+  max-width: 250px;
+  height: 100%;
+   transition: width 2s;
+   display: block;
+ /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+  overflow: hidden;
+  background: #1c262f;
+}
+
+#mapContainer{
+  width: 81.69%;
+  position: relative;
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+}
+
+.headLogo{
+  flex-basis: 40%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+  transform: translateX(10%);
+  font-weight: 400!important;
+}
+
+.navbar nav{
+ flex-basis: 200px;
+}
+
+.originalNav{
+  width: 100%;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  list-style: none;
+}

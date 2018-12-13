@@ -1,0 +1,42 @@
+.error_wrap{
+    background: url(https://3.bp.blogspot.com/-r2jm_dpqCWQ/WODGbBXOd5I/AAAAAAAANT4/ph2kSAX4YTkFFQY0yRgpnvkg1reoNFoNgCLcB/s1600/404%2BNot%2Bfound%2BError.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+   text-align: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+}
+         
+.error_bg{
+    height: 100%;  
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+         
+  .error_wrap h3, .error_wrap{
+    font-size: 1.5em!important;
+    color: #fff;
+    width: 100%;
+    line-height: 1.6em;
+}
+         
+.error_wrap .error_heading {
+   display: flex;
+   width: 100%;
+
+   justify-content: center
+}
+
+
+
+.error_wrap a{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+
+.error_wrap a:hover{
+    text-decoration: underline;
+}       

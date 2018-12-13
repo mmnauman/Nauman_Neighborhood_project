@@ -1,0 +1,377 @@
+#navContainer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.widgetSidbar{
+  width: 100%;
+}
+
+.widgetSidbar input{
+  position: relative;
+}
+
+.widgetSidbar i{
+  position: relative;
+  bottom: 25px;
+  left: 90%;
+  font-size: 1em;
+}
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-bottom-right-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+.headLogo h1{
+  font-weight: normal;
+}
+
+.headLogo span{
+  font-weight: bold;
+  display: inline-block;
+  background: #D62929;
+  padding: 10px 5px;
+  text-align: center;
+  width: fit-content;
+  margin-right: 4px;
+}
+
+.ReadMe{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('./images/libraray.jpeg');
+  background-size: cover;
+}
+
+.ReadMe .ReadMeInner{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ReadMe .AppIntroduction{
+  background: rgba(5, 25, 55,.8);
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 1.2em;
+  padding-top: 20px;
+}
+
+.ReadMe .AppIntroduction ol{
+  margin: 20px 10px 0px 30px;
+}
+
+.ReadMe h1{
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+  width: 100%;
+  background: rgba(12, 1, 112, 0.8);
+  color: #fff;
+ 
+}
+.ReadMe .AppIntroduction h2{
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.ReadMe p.Tech{
+  display: block;
+  margin-top: 80px;
+}
+
+
+.ReadMe .secondRow{
+  background: rgba(34, 3, 3, 0.8);
+  width: 50%;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 1.2em;
+  padding-top: 20px;
+} 
+
+.secondRow h2{
+  text-align: center;
+  padding-top: 10px
+}
+
+.secondRow ol{
+  margin: 20px 10px 0px 30px;
+}
+
+.secondRow ol li{
+  margin-bottom: 5px
+}
+
+.searched-list{
+  width: 100% ;
+  height: 485px;
+  color: #fff;
+  overflow: scroll;
+  padding: 0px;
+ position: relative;
+}
+.WidgetHead{
+  color: #fff;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+}
+
+
+@media (min-width: 900px) {
+
+  .ReadMe .AppIntroduction h2{
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    position: absolute;
+    height: 40px;
+    width: 51.3%;
+    background: #D62929;
+    left: 0px;
+    z-index: 1;
+    color: #fff;
+    padding-top: 5px
+  }
+  
+  .ReadMe p.Tech{
+    display: block;
+    margin-top: 80px;
+  }
+  
+  .ReadMe .AppIntroduction h2:after{
+    bottom: -16px;
+    right: 0px;
+    position: absolute;
+    content: "";
+    border-left: 8px solid #ee573a;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ee573a;
+    border-bottom: 8px solid transparent;
+  }
+
+}
+
+@media (max-width: 899px) {
+
+  .WidgetHead, .widgetSidbar ol{
+    font-size: 14px!important;
+  }
+
+ header > *{
+   font-size: .8em!important;
+ } 
+
+.ReadMe h1{
+  font-size: 1.5em;
+}
+
+.ReadMe h2, .ReadMe ol, .ReadMe p, .headLogo{
+  font-size: 1em!important;
+}
+
+.AppIntroduction h2, .AppIntroduction p{
+  margin: 10px 0px!important;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+ .ReadMeInner{
+   display: block!important;
+ }
+
+ .AppIntroduction, .secondRow{
+   width: 100%!important;
+ }
+
+ .secondRow{
+   background: rgba(5, 25, 55,.8)!important;
+ }
+
+ .AppIntroduction h2, .AppIntroduction p{
+   margin: 10px 0px!important;
+ }
+ 
+ 
+ }
+
+ @media (max-width: 491px){
+  .headLogo {
+    display: none;
+  }
+ }
+
+ @media (max-width: 620px) {
+
+  #mainBody{
+    display:block!important;
+  }
+
+  #optionsContainer{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden!important;
+    height: auto;
+  }
+
+  #navContainer ol{
+    width: 90%;
+    height: 100%;
+    max-height: 200px!important;
+    margin-left: 20px;
+    padding-left: 25px;
+    border-bottom: 1px solid blue;
+  }
+
+  #navContainer ol li{
+    margin-bottom: 5px;
+  }
+
+  #navContainer ol li:hover{
+    background-color: #D62929;
+  }
+
+  #mapContainer{
+    display: block!important;
+    width: 100%;
+    min-height: 300px;
+    position: relative!important;
+  }
+
+  #map{
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+  }
+
+  .WidgetHead{
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+  }
+
+}
+
+@media (min-width: 621px){
+  .searched-list{
+    width: 100% ;
+    height: 485px;
+    color: #fff;
+    overflow: scroll;
+    list-style: none;
+    padding: 0px;
+   position: relative;
+   top: -20px;
+    counter-reset: trendingwidgets;
+    font-size: 1em;
+  }
+  
+  .searched-list li{
+    border-bottom: .5px solid black;
+    margin: 10px 2px;
+    position: relative;
+    left: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    background: #f2f2f2;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .searched-list li:before{
+    counter-increment: trendingwidgets;
+      content: counter(trendingwidgets);
+      font-size: 100%;
+      position: absolute;
+      width: 30px;
+      top: 0px;
+      bottom: 0px;
+      left: -30px;
+      text-align: center;
+      border-radius: 150em 0em 0em 150em;
+      background: #BF3115;
+      color: #fff;
+      padding-top: 8px;
+      box-shadow: 0px 0px 3px 1px #1D1F20;
+      transition: all .8s;
+  }
+  
+  .searched-list li:hover:before{
+    transform: rotate(360deg);
+  }
+
+  .WidgetHead:nth-child(1){
+    top: -10px
+    }
+    
+    .WidgetHead{
+      position: relative;
+      height: 40px;
+      width: 106.5%;
+      background: #D62929;
+      font-size: 1em;
+      text-align: center;
+      left: 0px;
+      z-index: 1;
+      color: #fff;
+      padding-top: 10px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    
+    .WidgetHead:after{
+      bottom: -16px;
+      right: 0px;
+      position: absolute;
+      content: "";
+      border-left: 8px solid #ee573a;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #ee573a;
+      border-bottom: 8px solid transparent;
+    }
+
+    #optionsContainer{
+      overflow: visible!important;
+    }
+
+    .widgetSidbar input{
+      position: relative;
+    }
+
+
+}
